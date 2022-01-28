@@ -1,3 +1,5 @@
+![convert between RGB & HEX](https://raw.githubusercontent.com/ritachien/Convert-Between-RGB-HEX/main/demo.webp)
+
 ## Info  
 A simple website that convert color code between RGB and HEX. It shows the result of your input.  
 - RGB & HEX color code.  
