@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Rita Chien">
+    <meta name="description" content="A web page converts color between RGB and HEX.">
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+    <script src="app.js"></script> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
+    <title>RGB & HEX Color Convert</title>
+</head>
+
+<body>
+<!-- navbar -->
+  <nav class="navbar navbar-dark bg-dark mb-50" style="padding-left: 15px">
+    <span class="navbar-text" style="font-size:30px; color:white">Convert RGB & HEX</span>
+  </nav>
+  <!-- main container-->
+  <div class="container text-center my-50">
+    <h2 class="my-3">Color Playground</h2>
+    <div class="row justify-content-center">
+  
+      <!-- RGB Input section -->
+      <div class="col-4 border p-3" id="rgb-input-section">
+        <h3 class="my-3">RGB Input</h3>
+        <h6 class="mb-5">請輸入 0~255 間整數。</h6>
+        <!-- Red input -->
+        <div class="input-group mb-3">
+          <span class="input-group-text">R</span>
+          <input class="form-control input-value" type="number" min="0" max="255" value="255">
+          <div class="input-group-text red-init rgb-color-output"></div>
+        </div>
+        <!-- Green input -->
+        <div class="input-group mb-3">
+          <span class="input-group-text">G</span>
+          <input class="form-control input-value" type="number" min="0" max="255" value="255">
+          <div class="input-group-text green-init rgb-color-output"></div>
+        </div>
+        <!-- Blue input -->
+        <div class="input-group mb-3">
+          <span class="input-group-text">B</span>
+          <input class="form-control input-value" type="number" min="0" max="255" value="255">
+          <div class="input-group-text blue-init rgb-color-output"></div>
+        </div>
+      </div>
+      <!-- HEX section -->
+      <div class="col-4 border p-3">
+        <h3 class="my-3">HEX</h3>
+        <h6>請輸入6位16進位色碼。</h6>
+        <p class="mb-3">範圍:由 0~9 及 a~f 組合</p>
+        <div class="input-group mb-3">
+          <span class="input-group-text">#</span>
+          <input class="form-control hex-value" type="text" value="ffffff">
+          <div class="input-group-text send-btn btn text-center">
+            <i class="fas fa-exchange-alt fa-lg"></i>
+          </div>
+        </div>
+        <div class="hex-color-output"></div>
+      </div>
+  
+      <!--   RGB Slider   -->
+      <div class="col-4 border p-3" id="rgb-slider-section">
+        <h3 class="my-3">RGB Slider</h3>
+        <h6 class="mb-5">請拉動滑塊。</h6>
+        <!-- Red slider -->
+        <div class="input-group mb-3">
+          <span class="input-group-text">R</span>
+          <input type="range" min="0" max="255" step="1" value="255" class="form-control slider-position">
+          <div class="input-group-text">
+            <span class="slider-value">255</span>
+          </div>
+        </div>
+        <!-- Green slider -->
+        <div class="input-group mb-3">
+          <span class="input-group-text">G</span>
+          <input type="range" min="0" max="255" step="1" value="255" class="form-control slider-position">
+          <div class="input-group-text">
+            <span class="slider-value">255</span>
+          </div>
+        </div>
+        <!-- Blue slider -->
+        <div class="input-group mb-3">
+          <span class="input-group-text">B</span>
+          <input type="range" min="0" max="255" step="1" value="255" class="form-control slider-position">
+          <div class="input-group-text">
+            <span class="slider-value">255</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
