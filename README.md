@@ -1,4 +1,4 @@
-![convert between RGB & HEX](https://raw.githubusercontent.com/ritachien/Convert-Between-RGB-HEX/main/demo.webp)
+![convert between RGB & HEX](https://raw.githubusercontent.com/ritachien/Convert-Between-RGB-HEX/main/demo.gif)
 
 ## Info  
 A simple website that converts color code between RGB and HEX. It shows the result of your input. [(Link Here.)](https://ritachien.github.io/Convert-Between-RGB-HEX/)
@@ -13,3 +13,6 @@ There are three ways to start:
 
 ## Others  
 It's a practice of event listener in JavaScript.
+- 2022-01-28 First commit.
+- 2022-02-02 Add demo.gif
+- 2022-03-16 Change background color.

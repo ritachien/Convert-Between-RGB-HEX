@@ -87,7 +87,6 @@ function changeOutput(currentColor) {
   hexValue.value = colorToHex(currentColor);
   // HEX Section & body 背景 -- 顏色輸出
   hexColor.style.backgroundColor = `rgb(${currentColor[0]}, ${currentColor[1]}, ${currentColor[2]})`;
-  document.body.style.backgroundColor = `rgb(${currentColor[0]}, ${currentColor[1]}, ${currentColor[2]})`;
   // RGB Slider Section -- 滑塊位置
   for (let i = 0; i < currentColor.length; i++) {
     sliderPosition[i].value = currentColor[i];
